@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from 'react-router-dom'
 import useUserContext from "../UserContext";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
 
@@ -11,6 +12,26 @@ const Navbar = () => {
     JSON.parse(sessionStorage.getItem("user"))
   );
 
+  const deleteUser = async (id) => {
+        console.log(id);
+        const res = await fetch('http://localhost:5000/user/delete/'+id, {method : 'DELETE'});
+
+        if(res.status === 200){
+          Swal.fire({
+          icon : 'success',
+          title : 'User Deleted Successfully!!'
+          });
+          {logout()};
+          navigateLogin();
+        } else {
+          Swal.fire({
+          icon : 'error',
+          title : 'Oops!!',
+          text: 'Some Error Occured'
+        });
+      }
+  }
+
   console.log(currentUser);
 
   const showLoginOption = () => {
@@ -20,6 +41,10 @@ const Navbar = () => {
           <div className="d-flex align-items-center">
               <button type="button" className="btn btn-info fs-5 me-1 fw-bold" onClick={logout}>
                 LogOut
+              </button>
+
+              <button type="button" className="btn btn-danger fs-5 me-1 fw-bold" onClick={() => { deleteUser(currentUser._id) }}>
+                Delete
               </button>
 
               <img width={40} className="ms-4 rounded-circle" src={"http://localhost:5000/"+currentUser.avatar} alt="" />
