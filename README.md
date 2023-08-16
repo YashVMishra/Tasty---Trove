@@ -51,10 +51,10 @@
 ---
 
 # Commands Used
-## To run FrontEnd - npm start
-## To run BackEnd - npm run dev
+## To run Frontend - npm start
+## To run Backend - npm run dev
 
 ---
 
 # Database Used and Uploads
-## MongoDB Used and Photos are stored in Local Storage
+## MongoDB Used and Photos are stored in Local Storage in the uploads folder of backend
