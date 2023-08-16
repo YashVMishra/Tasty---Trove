@@ -12,7 +12,7 @@
 ## Browse Page
 ![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/Browse.png?raw=true)
 
-**#To Add Recipe you have to Login First**
+# To Add Recipe you have to Login First
 
 ## Add Recipe Page
 ![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/Add%20Recipe.png?raw=true)
@@ -21,12 +21,12 @@
 ![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/View%201.png?raw=true)
 ![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/View%202.png?raw=true)
 
-# **To Update or Delete the User you have to login first.**
+# To Update or Delete the User you have to login first.
 
 ## Update/Delete Page
 ![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/Update-Delete%20Page.png?raw=true)
 
-# **If you don't Log In then on clicking on Add Recipe page and View Button in Browse Page, an alert shows up.**
+# If you don't Log In then on clicking on Add Recipe page and View Button in Browse Page, an alert shows up.
 
 ## Adding and Viewing Without Login
 ![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/Without%20Login.png?raw=true)
