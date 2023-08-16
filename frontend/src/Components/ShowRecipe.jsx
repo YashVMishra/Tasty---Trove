@@ -24,12 +24,12 @@ const ShowRecipe = () => {
     }, []);
 
   return (
-    <div className="row d-flex justify-content-center align-items-center" style={{backgroundColor : "black"}}>
-        <h1 className="text-center display-3 mt-4 fw-bold text-white">{userData.title}</h1>
-        <div className='col-md-3 mb-4 w-50' style={{backgroundColor : "black"}}>
-              <div className="card">
+    <div className="row d-flex justify-content-center align-items-center" style={{backgroundImage : "url(https://media.istockphoto.com/id/1182393436/vector/fast-food-seamless-pattern-with-vector-line-icons-of-hamburger-pizza-hot-dog-beverage.jpg?s=612x612&w=0&k=20&c=jlj-n_CNsrd13tkHwC7MVo0cGUyyc8YP6wJQdCvMUGw=)"}}>
+        <div className='col-md-3 mb-4 w-50' >
+              <div className="card mt-3">
                   <div className='card-body'>
-                  <img src={'http://localhost:5000/'+userData.image} alt="" className="card-img-top img-fluid"/> 
+                    <span className="text-center fw-bold d-block display-4 mb-3">{userData.title}</span>
+                  <img src={'http://localhost:5000/'+userData.image} alt="" className="card-img-top img-fluid" style={{objectFit : "cover", height: 500}}/> 
                   </div>
 
                   <div className="card-footer">

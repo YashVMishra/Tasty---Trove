@@ -85,8 +85,8 @@ const SignUp = () => {
     }}
   >
     <div className="container-fluid">
-      <div className="row  justify-content-center align-items-center d-flex-row text-center h-100">
-        <div className="col-12 col-md-4 col-lg-3   h-50 ">
+      <div className="row justify-content-center align-items-center d-flex-row text-center h-100">
+        <div className="col-12 col-md-4 col-lg-3 h-50 ">
           <div className="card shadow">
             <div className="card-body mx-auto">
               <h4 className="card-title mt-3 text-center fw-bold">Create Account</h4>

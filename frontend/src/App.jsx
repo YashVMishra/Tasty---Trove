@@ -9,6 +9,7 @@ import Home from "./Components/Home";
 import { UserProvider } from "./UserContext";
 import ShowRecipe from "./Components/ShowRecipe";
 import UpdateUser from "./Components/UpdateUser";
+import UserAuth from "./UserAuth";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
             <Route path='/' element={ <Navigate to="/home" /> } />
             <Route path='home' element={ <Home /> } />
             <Route path='browse' element={ <Browse/>} />
-            <Route path='addrecipe' element={<AddRecipe/>} />
+            <Route path='addrecipe' element={<UserAuth><AddRecipe/></UserAuth>} />
             <Route path='login' element={<Login/>} />
             <Route path='signup' element={<SignUp/>} />
             <Route path='showrecipe/:id' element={<ShowRecipe/>} />

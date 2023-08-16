@@ -3,20 +3,40 @@ import { useNavigate} from 'react-router-dom'
 import { useFormik } from 'formik';
 import Swal from "sweetalert2";  
 import useUserContext from "../UserContext";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFilePen } from '@fortawesome/free-solid-svg-icons'
+
 
 const UpdateUser = () => {
 
-  const { setLoggedIn } = useUserContext();
+  const { setLoggedIn, logout, currentUser, setCurrentUser } = useUserContext();
 
   const navigate = useNavigate();
 
   const [setImage, setSetImage] = useState('');
 
-  const [currentUser, setCurrentUser] = useState(
-    JSON.parse(sessionStorage.getItem("user"))
-  );
+  const navigateLogin = () => {
+    // navigate to home
+    navigate('/login');
+  };
 
   console.log(currentUser);
+
+  const deleteUser = async (id) => {
+    logout();
+    const res = await fetch('http://localhost:5000/user/delete/'+id, {method : 'DELETE'});
+    if(res.status === 200){
+      Swal.fire({
+        icon : "success",
+        title:"User Deleted Succesfully!"
+      })
+    } else {
+      Swal.fire({
+        icon : "error",
+        title:"Error Occurred!"
+      })
+    }
+}
 
   const signupForm = useFormik({
     initialValues: {
@@ -66,6 +86,7 @@ const UpdateUser = () => {
     const data = await res.json();
     console.log(data);
     sessionStorage.setItem('user', JSON.stringify(data));
+    setCurrentUser(data);
     setLoggedIn(true);
   };
 
@@ -95,11 +116,11 @@ const UpdateUser = () => {
   >
     <div className="container-fluid">
       <div className="row  justify-content-center align-items-center d-flex-row text-center h-100">
-        <div className="col-12 col-md-4 col-lg-3   h-50 ">
+        <div className="col-12 col-md-4 col-lg-3 h-50">
           <div className="card shadow">
             <div className="card-body mx-auto">
-              <h4 className="card-title mt-3 text-center fw-bold">Create Account</h4>
-              <p className="text-center fw-bold">Get started with your free account</p>
+            <h4 className="card-title fs-2 text-center fw-bold"><FontAwesomeIcon icon={faFilePen} /></h4>
+              <h4 className="card-title mt-3 text-center fw-bold">Update User/Delete</h4>
               <form onSubmit={signupForm.handleSubmit}>
                 <div className="form-group input-group my-3">
                   <div className="input-group-prepend">
@@ -158,9 +179,13 @@ const UpdateUser = () => {
                   />
                 </div>
                 <div className="form-group my-3">
-                  <button type="submit" className="btn btn-dark btn-block fs-6 fw-bold">
+                  <button type="submit" className="btn btn-dark btn-block fw-bold fs-6">
                     {" "}
                     Update{" "}
+                  </button>
+                  <button type="submit" className="btn btn-danger btn-block fw-bold fs-6" onClick={() => { deleteUser(currentUser._id) }}>
+                    {" "}
+                    Delete{" "}
                   </button>
                 </div>
               </form>

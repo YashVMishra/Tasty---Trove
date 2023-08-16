@@ -20,12 +20,12 @@ export const UserProvider = ({children}) => {
 
     const logout = () => {
         sessionStorage.removeItem('user');
-        setCurrentUser(null);
         setLoggedIn(false);
+        setCurrentUser(null);
         navigate('/login');
     }
 
-    return <UserContext.Provider value={{loggedIn, setLoggedIn, logout}} >
+    return <UserContext.Provider value={{loggedIn, setLoggedIn, logout, currentUser, setCurrentUser}} >
         {children}
     </UserContext.Provider>
 };

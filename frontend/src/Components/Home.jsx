@@ -6,14 +6,9 @@ const Home = () => {
 
   const navigate = useNavigate();
 
-  const navigateLogin = () => {
+  const navigateBrowse = () => {
     // navigate to home
-    navigate('/login');
-  };
-
-  const navigateSignUp = () => {
-    // navigate to home
-    navigate('/signup');
+    navigate('/browse');
   };
 
   return (
@@ -32,11 +27,8 @@ const Home = () => {
               <div className="text-white mb-6">
                 <h1 className="mb-3 display-5 fw-bold">Welcome to your Personal Chef App</h1>
                 <h5 className="mb-4 display-6 fw-bold">Add and Create something new</h5>
-                <button className="btn btn-outline-light btn-lg m-2 fw-bold" onClick={navigateLogin}>
-                  LOGIN
-                </button>
-                <button className="btn btn-outline-light btn-lg m-2 fw-bold" onClick={navigateSignUp}>
-                  SIGNUP
+                <button className="btn btn-outline-light btn-lg m-2 fw-bold fs-5" onClick={navigateBrowse}>
+                  Get Started
                 </button>
               </div>
             </div>

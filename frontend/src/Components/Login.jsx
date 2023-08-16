@@ -4,10 +4,12 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Swal from "sweetalert2";
 import useUserContext from "../UserContext";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLock } from '@fortawesome/free-solid-svg-icons'
 
 const Login = () => {
 
-  const { setLoggedIn } = useUserContext();
+  const { setLoggedIn, setCurrentUser } = useUserContext();
 
   const navigate = useNavigate();
 
@@ -43,8 +45,10 @@ const Login = () => {
           icon:'success',
           title:'Login Success!'
         })
+
         const data = await res.json();
         sessionStorage.setItem('user', JSON.stringify(data));
+        setCurrentUser(data);
         setLoggedIn(true);
         console.log(setLoggedIn);
         navigate('/addrecipe');
@@ -80,7 +84,8 @@ const Login = () => {
         <div className="col-12 col-md-6 col-lg-3 h-50">
           <div className="card shadow">
             <div className="card-body mx-auto">
-              <h4 className="card-title mt-2 mb-4 text-center fw-bold fs-3">Login</h4>
+            <h4 className="card-title fs-2 text-center fw-bold fs-3"><FontAwesomeIcon icon={faLock} /></h4>
+              <h4 className="card-title mb-3 text-center fw-bold fs-3">Login</h4>
               <form onSubmit={loginForm.handleSubmit} className=''>
                 <div className="form-group input-group my-3">
                   <div className="input-group-prepend">
