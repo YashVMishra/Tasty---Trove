@@ -46,3 +46,14 @@
 
 ## Adding and Viewing Without Login
 ![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/Without%20Login.png?raw=true)
+
+---
+
+# Commands Used
+## To run FrontEnd - npm start
+## To run BackEnd - npm run dev
+
+---
+
+# Database Used and Uploads
+## MongoDB Used and Photos are stored in Local Storage
