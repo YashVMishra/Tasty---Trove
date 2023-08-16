@@ -12,6 +12,18 @@
 ## Browse Page
 ![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/Browse.png?raw=true)
 
+---
+
+# You Can filter the recipes on the basis of Titles and Categories
+
+## Filter Using Title
+![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/Filter-Title.png?raw=true)
+
+## Filter Using Category
+![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/Filter-Category.png?raw=true)
+
+---
+
 # To Add Recipe you have to Login First
 
 ## Add Recipe Page
@@ -21,10 +33,14 @@
 ![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/View%201.png?raw=true)
 ![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/View%202.png?raw=true)
 
+---
+
 # To Update or Delete the User you have to login first.
 
 ## Update/Delete Page
 ![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/Update-Delete%20Page.png?raw=true)
+
+---
 
 # If you don't Log In then on clicking on Add Recipe page and View Button in Browse Page, an alert shows up.
 
