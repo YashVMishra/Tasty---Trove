@@ -24,7 +24,7 @@ function App() {
             <Route path='addrecipe' element={<UserAuth><AddRecipe/></UserAuth>} />
             <Route path='login' element={<Login/>} />
             <Route path='signup' element={<SignUp/>} />
-            <Route path='showrecipe/:id' element={<ShowRecipe/>} />
+            <Route path='showrecipe/:id' element={<UserAuth><ShowRecipe/></UserAuth>} />
             <Route path='updateuser' element={<UpdateUser/>} />
           </Routes>
           </UserProvider>
