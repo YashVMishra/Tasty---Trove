@@ -34,6 +34,20 @@ const Navbar = () => {
 
   console.log(currentUser);
 
+  const showUpdateUser = () => {
+    if(loggedIn===true){
+      return (
+        <>
+          <li className="nav-item">
+              <NavLink className="nav-link fs-5" aria-current="page" to="/updateuser">
+                Update User
+              </NavLink>
+          </li>
+        </>
+      )
+    }
+  }
+
   const showLoginOption = () => {
     if(loggedIn===true){
       return (
@@ -128,6 +142,8 @@ const Navbar = () => {
                       Add Recipe
                     </NavLink>
                   </li>
+
+                  {showUpdateUser()}
                 </ul>
                 {/* Left links */}
                 {/* <div className="d-flex align-items-center">

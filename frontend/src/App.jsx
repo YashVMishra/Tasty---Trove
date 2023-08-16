@@ -8,6 +8,7 @@ import SignUp from "./Components/SignUp";
 import Home from "./Components/Home";
 import { UserProvider } from "./UserContext";
 import ShowRecipe from "./Components/ShowRecipe";
+import UpdateUser from "./Components/UpdateUser";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path='login' element={<Login/>} />
             <Route path='signup' element={<SignUp/>} />
             <Route path='showrecipe/:id' element={<ShowRecipe/>} />
+            <Route path='updateuser' element={<UpdateUser/>} />
           </Routes>
           </UserProvider>
       </BrowserRouter>
