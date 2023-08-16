@@ -12,7 +12,7 @@
 ## Browse Page
 ![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/Browse.png?raw=true)
 
-# **To Add Recipe you have to Login First**
+**# To Add Recipe you have to Login First**
 
 ## Add Recipe Page
 ![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/Add%20Recipe.png?raw=true)
