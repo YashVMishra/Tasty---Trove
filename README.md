@@ -1,6 +1,7 @@
 # Tasty---Trove (Personal Recipe Adding App)
 
 ## On Opening the page by running the command (npm start)
+## On clicking the Get Started button, You will be directed to the Browse Page
 ![](https://github.com/YashVMishra/Tasty---Trove/blob/master/Screenshot/Home.png?raw=true)
 
 ## SignUp Page
