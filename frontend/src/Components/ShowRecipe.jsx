@@ -28,7 +28,7 @@ const ShowRecipe = () => {
         <div className='col-md-3 mb-4 w-50' >
               <div className="card mt-3">
                   <div className='card-body'>
-                    <span className="text-center fw-bold d-block display-4 mb-3">{userData.title}</span>
+                    <span className="text-center fw-bold d-block display-5 mb-3">😋 {userData.title} 😋</span>
                   <img src={'http://localhost:5000/'+userData.image} alt="" className="card-img-top img-fluid" style={{objectFit : "cover", height: 500}}/> 
                   </div>
 

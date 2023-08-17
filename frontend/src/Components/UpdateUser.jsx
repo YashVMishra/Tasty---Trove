@@ -134,7 +134,7 @@ const UpdateUser = () => {
                     placeholder="Full name"
                     type="text"
                     name='name' onChange={signupForm.handleChange}  value={signupForm.values.name}
-                    required=""
+                    required
                   />
                 </div>
                 <div className="form-group input-group my-3">
@@ -149,7 +149,7 @@ const UpdateUser = () => {
                     className="form-control"
                     placeholder="Email address"
                     type="email"
-                    required=""
+                    required
                   />
                 </div>
                 <div className="form-group input-group my-3">
@@ -164,7 +164,7 @@ const UpdateUser = () => {
                     className="form-control"
                     placeholder="Create password"
                     type="password"
-                    required=""
+                    required  
                   />
                 </div>
                 <div className="form-group input-group my-3">
