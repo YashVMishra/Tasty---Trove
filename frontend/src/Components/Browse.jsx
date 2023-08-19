@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faThumbsDown, faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 
 const Browse = () => {
 
@@ -41,7 +43,9 @@ const Browse = () => {
                   <div className="card-footer">
                       <h4>{recipe.title}</h4>
                       <p>{recipe.category}</p>
-                      <button className='btn btn-dark mb-2' onClick={ () => { navigate('/showrecipe/'+recipe._id) }}>Click to View</button>
+                      <button className='btn btn-dark mb-2 me-1 px-3' onClick={ () => { navigate('/showrecipe/'+recipe._id) }}>Click to View</button>
+                      <button className='btn btn-info mb-2 py-2 px-3 mx-1'><FontAwesomeIcon icon={faThumbsUp} /> 10</button>
+                      <button className='btn btn-danger mb-2 py-2 px-3'><FontAwesomeIcon icon={faThumbsDown} /> 110</button>
                   </div>
               </div>
           </div>
