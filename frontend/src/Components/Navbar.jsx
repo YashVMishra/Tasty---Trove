@@ -104,6 +104,12 @@ const Navbar = () => {
                   </li>
 
                   <li className="nav-item">
+                    <NavLink className="nav-link fs-5" aria-current="page" to="/about">
+                      About
+                    </NavLink>
+                  </li>
+
+                  <li className="nav-item">
                     <NavLink className="nav-link fs-5" aria-current="page" to="/browse">
                       Browse
                     </NavLink>

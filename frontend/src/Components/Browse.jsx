@@ -30,7 +30,7 @@ const Browse = () => {
 
     const displayRecipeData = () => {
       if(recipeList.length===0){
-          return <h1 className='text-center text-white fw-bold'>No Data Found</h1>
+          return <h1 className='text-center fw-bold' style={{color : "seagreen"}}>No Data Found</h1>
       }
   
       return recipeList.map((recipe) => (

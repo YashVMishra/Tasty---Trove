@@ -10,6 +10,7 @@ import { UserProvider } from "./UserContext";
 import ShowRecipe from "./Components/ShowRecipe";
 import UpdateUser from "./Components/UpdateUser";
 import UserAuth from "./UserAuth";
+import About from "./Components/About";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path='signup' element={<SignUp/>} />
             <Route path='showrecipe/:id' element={<UserAuth><ShowRecipe/></UserAuth>} />
             <Route path='updateuser' element={<UpdateUser/>} />
+            <Route path='about' element={<About/>} />
           </Routes>
           </UserProvider>
       </BrowserRouter>

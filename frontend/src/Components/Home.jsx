@@ -11,6 +11,11 @@ const Home = () => {
     navigate('/browse');
   };
 
+  const navigateAbout = () => {
+    // navigate to home
+    navigate('/about');
+  };
+
   return (
     <div>
         <header>
@@ -29,6 +34,10 @@ const Home = () => {
                 <h5 className="mb-4 display-6 fw-bold">Add and Create something new</h5>
                 <button className="btn btn-outline-light btn-lg m-2 fw-bold fs-5" onClick={navigateBrowse}>
                   Get Started
+                </button>
+
+                <button className="btn btn-outline-light btn-lg m-2 fw-bold fs-5" onClick={navigateAbout}>
+                  About Us
                 </button>
               </div>
             </div>
