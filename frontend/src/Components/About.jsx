@@ -5,7 +5,7 @@ const About = () => {
     <>
         <div className="d-flex justify-content-start" style={{backgroundImage : "url(462927.jpg)", backgroundSize : "cover", minHeight : "100vh"}}>
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-sm-12 col-md-12 col-lg-6">
                     <p className='fs-5 fw-bold ms-3 mt-4' style={{color : "#FAF3E0"}}>
                         <h3 className='text-center fw-bold display-5'>😋 Tasty - Trove 😋</h3>
                         "<span className='display-6 fw-bold'>T</span>asty Trove is your culinary companion, 
