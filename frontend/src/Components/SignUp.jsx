@@ -33,7 +33,7 @@ const SignUp = () => {
       console.log(values);
 
       // sending request to backend
-      const res = await fetch('https://react-tasty-trove.onrender.com/user/add', {
+      const res = await fetch('http://localhost:5000/user/add', {
         method: 'POST',
         body : JSON.stringify(values),
         headers: {
@@ -66,7 +66,7 @@ const SignUp = () => {
     const fd = new FormData();
     fd.append('myfile', file);
 
-    const res = await fetch('https://react-tasty-trove.onrender.com/util/uploadfile', {
+    const res = await fetch('http://localhost:5000/util/uploadfile', {
       method: 'POST',
       body: fd
     });

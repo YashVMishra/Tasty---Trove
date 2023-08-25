@@ -11,7 +11,7 @@ const ShowRecipe = () => {
     const [userData, setUserData] = useState({});
 
     const fetchUserData = async () => {
-        const res = await fetch("https://react-tasty-trove.onrender.com/recipe/getbyid/" + id);
+        const res = await fetch("http://localhost:5000/recipe/getbyid/" + id);
         console.log(res.status);
     
         const data = await res.json();
@@ -30,7 +30,7 @@ const ShowRecipe = () => {
       <div className="card my-3 w-75">
                   <div className='card-body'>
                     <span className="text-center fw-bold d-block display-5 mb-3">😋 {userData.title} 😋</span>
-                  <img src={'https://react-tasty-trove.onrender.com/'+userData.image} alt="" className="card-img-top img-fluid" style={{objectFit : "cover", height: 550}}/> 
+                  <img src={'http://localhost:5000/'+userData.image} alt="" className="card-img-top img-fluid" style={{objectFit : "cover", height: 550}}/> 
                   </div>
 
                   <div className="card-footer">
