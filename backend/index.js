@@ -13,7 +13,7 @@ const RecipeRouter = require('./routers/recipeRouter');
 const UtilRouter = require('./routers/util');
 
 app.use(cors({
-    origin: ['https://react-tasty-trove.onrender.com'] // allow requests only for this domain
+    origin: ['https://react-tasty-trove.onrender.com', 'http://localhost:3000'] // allow requests only for this domain
 }));
 app.use(express.json());
 
