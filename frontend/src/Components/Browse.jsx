@@ -11,7 +11,7 @@ const Browse = () => {
     const [masterList, setMasterList] = useState([]);
 
     const fetchUserData = async () => {
-      const res = await fetch('http://localhost:5000/recipe/getall');
+      const res = await fetch('https://react-tasty-trove.onrender.com/recipe/getall');
       console.log(res.status);
       if(res.status === 200){
           const data = await res.json();
@@ -38,7 +38,7 @@ const Browse = () => {
       return recipeList.map((recipe) => (
           <div className='col-md-3 mb-4'>
               <div className="card">
-                    <img src={'http://localhost:5000/'+recipe.image} alt="" className="card-img-top img-fluid" style={{objectFit : "cover", height: 250}}/>
+                    <img src={'https://react-tasty-trove.onrender.com/'+recipe.image} alt="" className="card-img-top img-fluid" style={{objectFit : "cover", height: 250}}/>
 
                   <div className="card-footer">
                       <h4>{recipe.title}</h4>

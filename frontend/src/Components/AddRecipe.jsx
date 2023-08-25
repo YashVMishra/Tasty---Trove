@@ -19,7 +19,7 @@ const AddRecipe = () => {
     onSubmit : async (values, { resetForm }) => {
       console.log(values);
       values.image = setImage;
-      const res = await fetch('http://localhost:5000/recipe/add', {
+      const res = await fetch('https://react-tasty-trove.onrender.com/recipe/add', {
         method: 'POST',
         body: JSON.stringify(values),
         headers: {
@@ -59,7 +59,7 @@ const AddRecipe = () => {
     const fd = new FormData();
     fd.append('myfile', file);
 
-    const res = await fetch('http://localhost:5000/util/uploadfile', {
+    const res = await fetch('https://react-tasty-trove.onrender.com/util/uploadfile', {
       method: 'POST',
       body: fd
     });

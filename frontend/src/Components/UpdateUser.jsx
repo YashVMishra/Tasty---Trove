@@ -24,7 +24,7 @@ const UpdateUser = () => {
 
   const deleteUser = async (id) => {
     logout();
-    const res = await fetch('http://localhost:5000/user/delete/'+id, {method : 'DELETE'});
+    const res = await fetch('https://react-tasty-trove.onrender.com/user/delete/'+id, {method : 'DELETE'});
     if(res.status === 200){
       Swal.fire({
         icon : "success",
@@ -51,7 +51,7 @@ const UpdateUser = () => {
       console.log(values);
 
       // sending request to backend
-      const res = await fetch('http://localhost:5000/user/update/'+currentUser._id, {
+      const res = await fetch('https://react-tasty-trove.onrender.com/user/update/'+currentUser._id, {
         method: 'PUT',
         body : JSON.stringify(values),
         headers: {
@@ -80,7 +80,7 @@ const UpdateUser = () => {
   })
 
   const fetchUserData = async () => {
-    const res = await fetch("http://localhost:5000/user/getbyid/" + currentUser._id);
+    const res = await fetch("https://react-tasty-trove.onrender.com/user/getbyid/" + currentUser._id);
     console.log(res.status);
 
     const data = await res.json();
@@ -96,7 +96,7 @@ const UpdateUser = () => {
     const fd = new FormData();
     fd.append('myfile', file);
 
-    const res = await fetch('http://localhost:5000/util/uploadfile', {
+    const res = await fetch('https://react-tasty-trove.onrender.com/util/uploadfile', {
       method: 'POST',
       body: fd
     });

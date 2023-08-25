@@ -33,7 +33,7 @@ const Navbar = () => {
                 LogOut
               </button>
               
-              <img width={40} className="ms-4 rounded-circle" src={"http://localhost:5000/"+currentUser.avatar} alt="" />
+              <img width={40} className="ms-4 rounded-circle" src={"https://react-tasty-trove.onrender.com/"+currentUser.avatar} alt="" />
           </div>
         </>
       )
