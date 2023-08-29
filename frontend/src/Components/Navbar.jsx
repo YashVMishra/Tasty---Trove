@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink, useNavigate } from 'react-router-dom'
 import useUserContext from "../UserContext";
-import Swal from "sweetalert2";
 
 const Navbar = () => {
 
