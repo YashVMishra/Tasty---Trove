@@ -77,7 +77,7 @@ const Navbar = () => {
             {/* Container wrapper */}
             <div className="container">
               {/* Navbar brand */}
-                  <button type="button" className="btn btn-info fs-5 fw-bold" onClick={navigateHome}>
+                  <button type="button" className="btn btn-danger fs-5 fw-bold" onClick={navigateHome}>
                   <i class="fa-solid fa-burger"></i> Tasty - Trove
                   </button>
               {/* Toggle button */}
