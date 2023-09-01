@@ -12,9 +12,10 @@ const UserRouter = require('./routers/userRouter');
 const RecipeRouter = require('./routers/recipeRouter');
 const UtilRouter = require('./routers/util');
 
-app.use(cors({
-    origin: ['https://frontend-flame-one-70.vercel.app'] // allow requests only for this domain
-}));
+// app.use(cors({
+//     origin: ['https://frontend-flame-one-70.vercel.app'] // allow requests only for this domain
+// }));
+app.use(cors());
 app.use(express.json());
 
 // middlewares
