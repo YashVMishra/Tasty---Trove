@@ -76,9 +76,9 @@ const AddRecipe = () => {
         "url(https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148694555.jpg?w=2000)"
     }}
   >
-    <div className="container-fluid w-100">
+    <div className="container-fluid">
       <div className="row justify-content-center align-items-center d-flex-row text-center h-100">
-        <div className="col-12 col-md-4 col-lg-3 h-50 w-50">
+        <div className="col-12 col-md-4 col-lg-3 h-50 w-auto">
           <div className="card shadow">
             <div className="card-body mx-auto w-100">
               <h4 className="card-title mt-1 mb-4 text-center fw-bold fs-2">Add Recipe</h4>
