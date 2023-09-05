@@ -25,10 +25,10 @@ const ShowRecipe = () => {
     <div style={{backgroundImage : "url(https://media.istockphoto.com/id/1182393436/vector/fast-food-seamless-pattern-with-vector-line-icons-of-hamburger-pizza-hot-dog-beverage.jpg?s=612x612&w=0&k=20&c=jlj-n_CNsrd13tkHwC7MVo0cGUyyc8YP6wJQdCvMUGw=)", minHeight : "100vh"}}>
         <div className="container" style={{backgroundImage : "url(https://media.istockphoto.com/id/1182393436/vector/fast-food-seamless-pattern-with-vector-line-icons-of-hamburger-pizza-hot-dog-beverage.jpg?s=612x612&w=0&k=20&c=jlj-n_CNsrd13tkHwC7MVo0cGUyyc8YP6wJQdCvMUGw=)", minHeight : "100vh"}}>
       <div className="row d-flex justify-content-center align-items-center">
-      <div className="card my-3 w-75">
+      <div className="card my-3">
                   <div className='card-body'>
                     <span className="text-center fw-bold d-block display-5 mb-3">😋 {userData.title} 😋</span>
-                  <img src={'https://react-tasty-trove.onrender.com/'+userData.image} alt="" className="card-img-top img-fluid" style={{objectFit : "cover", height: 550}}/> 
+                  <img src={'https://react-tasty-trove.onrender.com/'+userData.image} alt="" className="card-img-top img-fluid short" style={{objectFit : "cover", height: 550}}/> 
                   </div>
 
                   <div className="card-footer">
